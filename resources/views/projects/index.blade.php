@@ -1,3 +1,9 @@
+<x-layouts.app>
 <div>
-    <!-- The only way to do great work is to love what you do. - Steve Jobs -->
+    <ul>
+        @foreach($projects as $project)
+            <li> {{ $project }}</li>
+        @endforeach
+    </ul>
 </div>
+</x-layouts.app>
