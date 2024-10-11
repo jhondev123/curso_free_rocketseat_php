@@ -1,6 +1,7 @@
 <x-layouts.app>
-    <div>
-        <h1>{{ $project->title }}</h1>
-        <p>{{ $project->description }}</p>
-    </div>
+    <livewire:projects.show :$project/>
+
+    <livewire:projects.proposals :$project />
+
+
 </x-layouts.app>
