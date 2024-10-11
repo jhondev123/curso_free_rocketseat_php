@@ -21,7 +21,8 @@ class ProjectFactory extends Factory
             'description' => $this->faker->paragraph(3),
             'ends_at' => $this->faker->dateTimeBetween('now', '+3 days'),
             'status' => $this->faker->randomElement(['open', 'closed']),
-            'tech_stack' => $this->faker->randomElements(['PHP', 'Laravel', 'JavaScript', 'React', 'Vue', 'Angular'], random_int(1,5)),
+            'tech_stack' => fake()->randomElements(['nodejs', 'react', 'javascript', 'vite', 'nextjs'], random_int(1, 5)),
+
             'created_by' => User::factory(),
 
         ];

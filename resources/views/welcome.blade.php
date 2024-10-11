@@ -1,6 +1,3 @@
 <x-layouts.app>
-    hello
-    <livewire:test>
-
-    </livewire:test>
+    <livewire:teste />
 </x-layouts.app>
