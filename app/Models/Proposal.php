@@ -9,5 +9,5 @@ class Proposal extends Model
 {
     /** @use HasFactory<\Database\Factories\ProposalFactory> */
     use HasFactory;
-    protected $fillable = ['email', 'hours', 'project_id'];
+    protected $fillable = ['email', 'hours', 'project_id','position','position_status'];
 }
